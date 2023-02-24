@@ -1,4 +1,4 @@
-package com.example.mytasks
+package com.example.mytasks.ui
 
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -7,6 +7,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.example.mytasks.R
 import com.example.mytasks.ui.screens.MainScreen
 import com.example.mytasks.ui.screens.MainScreenViewModel
 
@@ -20,7 +21,7 @@ fun MyTasksApp(){
         color = MaterialTheme.colorScheme.background
     ) {
         Scaffold(topBar = {
-            TopAppBar(title = { Text(stringResource(id = R.string.app_name)) })
+            TopAppBar(title = { Text( text = stringResource(id = R.string.app_name))})
         }) {
             MainScreen(modifier = Modifier.padding(it), viewModel = viewModel)
         }
