@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyTasks</string>
+    <string name="deleteTask">Delete Task</string>
+    <string name="finished_tasks">Finished Tasks</string>
+    <string name="tasks">Tasks</string>
+    <string name="add">Add</string>
+    <string name="add_new_task">Add new Task</string>
+    <string name="empty_task_name_error">Task name cannot be empty !</string>
+</resources>
